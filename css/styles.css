@@ -6,6 +6,7 @@
     --bgd-color: #F5F5F5;
 
 }
+
 /* - - - - - - Гобальні стилі - - - - - - */
 body{
     background-color: var(--bgd-color);
@@ -15,33 +16,53 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+
 ul{
     list-style-type: none;
     padding-left: 0;
 }
+
 a{
     text-decoration: none;
 }
+
 h1, h2, h3, ul, p{
     margin: 0 0;
 }
+
 .container{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /* - - - - - - Студія - - - - - - */
 
 /* - - - - Heder - - - - */
+.header > .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
 .header .link{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .header .link:hover,
 .header .link:focus{
     color: var(--accent-color);
 }
+
 
 /* - - Логотип - - */
 .logo{
@@ -50,21 +71,40 @@ h1, h2, h3, ul, p{
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
+
+    margin-right: 93px;
 }
+
 .logo > span{
     color: var(--accent-color);
 }
 
 /* - - Навігація - - */
+.site-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 .site-nav .link{
+    display: inline-block;
+    padding: 22px 0;
     color: var(--secondary-text-color);
 }
+
 .site-nav .link.current{ /*Надає колір поточній вкладці*/
     color: var(--accent-color);
 }
 
 /* - - Контактні дані - - */
+.contacts{
+    display: flex;
+    gap: 50px;
+}
+
 .contacts .link{
+    display: inline-block;
+    padding: 22px 0;
     color: var(--primary-text-color);
 }
 
@@ -124,22 +164,26 @@ h1, h2, h3, ul, p{
 }
 
 /* - - Перелік особливостей компанії - - */
-.feature-list .title{
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+.feature-list .title {
     line-height: 1.14;
     color: var(--secondary-text-color);
     text-transform: uppercase;
 
     margin-bottom: 10px;
 }
-.feature-list .text{
+.feature-list .text {
     line-height: 1.71;
 }
-.feature-list > .list{
+.feature-list > .list {
     width: 270px;
 }
 
 /* - - Команда комапнії - - */
-.worker-name{
+.worker-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -148,12 +192,22 @@ h1, h2, h3, ul, p{
     margin-bottom: 10px;
 }
 
-.profession{
+.profession {
     font-size: 16px;
     line-height: 1.19;
 }
 
-.worker-list > .list{
+.work-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.worker-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.worker-list > .list {
     text-align: center;
 }
 
@@ -205,6 +259,14 @@ h1, h2, h3, ul, p{
 /* - - - - Main - - - - */
 
 /* - - Фільтер - - */
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.button-list .list:not(:last-child) {
+    margin-right: 8px;
+}
 .button-list .button{
     font-weight: 500;
     font-size: 16px;
@@ -223,7 +285,6 @@ h1, h2, h3, ul, p{
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    padding: 6px 25px;
 }
 
 /* - - Список проектів - - */
