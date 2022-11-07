@@ -1,5 +1,5 @@
 /* - - - - - - Змінні - - - - - - */
-:root{
+:root {
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
@@ -8,7 +8,7 @@
 }
 
 /* - - - - - - Гобальні стилі - - - - - - */
-body{
+body {
     background-color: var(--bgd-color);
     color: var(--primary-text-color);
 
@@ -17,20 +17,20 @@ body{
     letter-spacing: 0.03em;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h1, h2, h3, ul, p{
+h1, h2, h3, ul, p {
     margin: 0 0;
 }
 
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -42,6 +42,7 @@ h1, h2, h3, ul, p{
 .header {
     border-bottom: 1px solid #ECECEC;
 }
+
 .header > .container {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -55,20 +56,20 @@ h1, h2, h3, ul, p{
     align-items: center;
 }
 
-.header .link{
+.header .link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
 .header .link:hover,
-.header .link:focus{
+.header .link:focus {
     color: var(--accent-color);
 }
 
 
 /* - - Логотип - - */
-.logo{
+.logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -80,18 +81,18 @@ h1, h2, h3, ul, p{
     margin-right: 93px;
 }
 
-.logo > span{
+.logo > span {
     color: var(--accent-color);
 }
 
 /* - - Навігація - - */
-.site-nav{
+.site-nav {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.site-nav .link{
+.site-nav .link {
     display: inline-block;
     padding: 22px 0;
     color: var(--secondary-text-color);
@@ -102,12 +103,12 @@ h1, h2, h3, ul, p{
 }
 
 /* - - Контактні дані - - */
-.contacts{
+.contacts {
     display: flex;
     gap: 50px;
 }
 
-.contacts .link{
+.contacts .link {
     display: inline-block;
     padding: 22px 0;
     color: var(--primary-text-color);
@@ -115,25 +116,27 @@ h1, h2, h3, ul, p{
 
 
 /* - - - - Main - - - - */
-.section-title{
+.section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;   
     color: var(--secondary-text-color);
     margin-bottom: 50px;
 }
+
 .section {
     padding-bottom: 94px;
 }
 
 /* - - Секція Герой - - */
-.hero{
+.hero {
     background-color: #2F303A;
     text-align: center;
 
     padding: 200px 0;
 }
-.hero-title{
+
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -143,7 +146,8 @@ h1, h2, h3, ul, p{
 
     margin-bottom: 30px;
 }
-.button-hero{
+
+.button-hero {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -161,7 +165,7 @@ h1, h2, h3, ul, p{
     border: none;       
 }
 
-.button-hero:hover, .button-hero:focus{
+.button-hero:hover, .button-hero:focus {
     background-color: #188CE8;
 }
 
@@ -170,6 +174,7 @@ h1, h2, h3, ul, p{
     display: flex;
     justify-content: space-between;
 }
+
 .feature-list .title {
     line-height: 1.14;
     color: var(--secondary-text-color);
@@ -177,9 +182,11 @@ h1, h2, h3, ul, p{
 
     margin-bottom: 10px;
 }
+
 .feature-list .text {
     line-height: 1.71;
 }
+
 .feature-list > .list {
     width: 270px;
 }
@@ -209,7 +216,7 @@ h1, h2, h3, ul, p{
     line-height: 1.19;
 }
 
-.worker-list{
+.worker-list {
     display: flex;
     justify-content: space-between;
 }
@@ -229,12 +236,12 @@ h1, h2, h3, ul, p{
 }
 
 /* - - - - Footer - - - - */
-.footer{
+.footer {
     background-color: #2F303A;
     padding: 60px 0;
 }
 
-.logo-footer{
+.logo-footer {
     display: inline-block;
     color: #FFFFFF;
     text-shadow: none;
@@ -242,14 +249,14 @@ h1, h2, h3, ul, p{
     margin-bottom: 20px;
 }
 
-.address{
+.address {
     line-height: 24px;
     color: #FFFFFF;
 
     margin-bottom: 9px;
 }
 
-.contacts-footer .link{
+.contacts-footer .link {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -258,6 +265,7 @@ h1, h2, h3, ul, p{
 .footer .link:focus {
     color: var(--accent-color);
 }
+
 .contacts-footer .list:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -265,7 +273,7 @@ h1, h2, h3, ul, p{
 /* - - - - - - Портфоліо - - - - - - */
 
 /* - - - - Header - - - - */
-.header-portfolio{
+.header-portfolio {
     margin-bottom: 94px;
 }
 
@@ -277,10 +285,12 @@ h1, h2, h3, ul, p{
     justify-content: center;
     margin-bottom: 34px;
 }
+
 .button-list .list:not(:last-child) {
     margin-right: 8px;
 }
-.button-list .button{
+
+.button-list .button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
